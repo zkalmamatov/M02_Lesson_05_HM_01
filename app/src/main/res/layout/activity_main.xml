@@ -39,6 +39,17 @@
 
     </FrameLayout>
 
+    <Button
+        android:id="@+id/go_to_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="go to next activity"
+        android:onClick="goToNextActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
 
     <LinearLayout
         android:id="@+id/container"

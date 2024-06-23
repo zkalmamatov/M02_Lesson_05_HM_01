@@ -8,8 +8,8 @@
         <item name="android:insetTop">0dp</item>
         <item name="android:textSize">30sp</item>
     </style>
-    
-    
+
+
     <style name="Gray.Button" parent="Base.Button">
         <item name="backgroundTint">@color/gray</item>
         <item name="android:textColor">@color/black</item>
@@ -26,6 +26,25 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    
+
+    <style name="ellipse" parent="Base.Button">
+        <item name="background">@drawable/ellipse</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+    </style>
+
+
+    <style name="ell_01" parent="ellipse">
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="ProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_bar</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">20dp</item>
+
+    </style>
 
 </resources>
