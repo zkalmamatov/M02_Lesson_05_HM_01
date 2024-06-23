@@ -56,13 +56,17 @@ public class ResultActivity extends AppCompatActivity {
 
         spinnerOptions = findViewById(R.id.spiner_options);
 
-        spinnerOptions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinnerOptions.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String selectedOptions = parent.getItemAtPosition(position).toString();
                 Toast.makeText(ResultActivity.this, "Выбрано: " + selectedOptions, Toast.LENGTH_LONG).show();
             }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
         });
 
         seekBarMin = findViewById(R.id.seekbar_min);
