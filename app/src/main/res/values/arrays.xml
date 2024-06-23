@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="options_array">
+        <item>Вариант 1</item>
+        <item>Вариант 2</item>
+        <item>Вариант 3</item>
+    </string-array>
+</resources>

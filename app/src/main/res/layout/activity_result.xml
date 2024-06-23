@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/container_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_linear_layout"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_category"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="160dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="Category" />
+
+                    <ImageButton
+                        android:id="@+id/heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toEndOf="@id/button_category"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Heart Icon"
+                        android:src="@drawable/heart_line">
+
+                    </ImageButton>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="36dp"
+                    android:paddingBottom="8dp"
+                    android:text="Explore the nightlife of your city"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="free"
+                            android:textSize="16sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price💰"
+                            android:textSize="12sp"
+                            android:textStyle="bold">
+
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/ell_01"
+                                android:layout_margin="6dp"
+                                app:icon="@drawable/user"
+                                app:iconGravity="top"
+                                app:iconSize="12dp">
+
+
+                            </com.google.android.material.button.MaterialButton>
+
+                            <com.google.android.material.button.MaterialButton
+
+                                style="@style/ell_01"
+                                app:icon="@drawable/user"
+                                app:iconGravity="top"
+                                app:iconSize="12dp">
+
+
+                            </com.google.android.material.button.MaterialButton>
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/ell_01"
+                                android:layout_margin="6dp"
+                                app:icon="@drawable/user"
+                                app:iconGravity="top"
+                                app:iconSize="12dp">
+
+
+                            </com.google.android.material.button.MaterialButton>
+
+                            <com.google.android.material.button.MaterialButton
+                                style="@style/ell_01"
+                                app:icon="@drawable/user"
+                                app:iconGravity="top"
+                                app:iconSize="12dp">
+
+
+                            </com.google.android.material.button.MaterialButton>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Participants"
+                            android:textSize="14sp">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ProgressBar
+                            style="@style/ProgressBar"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp">
+
+                        </ProgressBar>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Accessibility"
+                            android:textSize="12dp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/gradient_button"
+            android:text="Next"
+            android:textSize="20dp">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_margin="6"
+                    android:text="Category"
+                    android:textColor="@color/white">
+
+                </TextView>
+
+
+                <Spinner
+                    android:id="@+id/spiner_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_button"
+                    android:backgroundTint="@color/white"
+                    android:entries="@array/options_array"
+                    android:gravity="center_vertical"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="56dp"
+                    android:paddingBottom="8dp"
+                    android:popupBackground="@color/gray"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginVertical="8dp"
+                    android:background="@drawable/rounded_linear_layout">
+
+                </View>
+
+                <SeekBar
+                    android:background="@drawable/rounded_linear_layout"
+                    android:id="@+id/seekbar_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progressDrawable="@drawable/seekbar">
+
+                </SeekBar>
+
+                <SeekBar
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rounded_linear_layout"
+                    android:id="@+id/seekbar_max"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progressDrawable="@drawable/seekbar">
+
+                </SeekBar>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
