@@ -29,8 +29,9 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-
+        Button nextButton = findViewById(R.id.next_button);
         imageButtonHeart = findViewById(R.id.heart);
+
 
         imageButtonHeart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,12 +46,12 @@ public class ResultActivity extends AppCompatActivity {
         });
 
 
-        Button nextButton = findViewById(R.id.next_button);
+
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                finishAffinity();
             }
         });
 
